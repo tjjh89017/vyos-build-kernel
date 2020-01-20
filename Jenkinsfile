@@ -80,7 +80,7 @@ def projectProperties = [
 properties(projectProperties)
 setDescription()
 
-node('Docker') {
+node('master') {
     stage('Define Agent') {
         script {
             // create container name on demand
